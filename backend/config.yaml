@@ -1,0 +1,29 @@
+server:
+    host: 0.0.0.0
+    port: 8080
+    mode: release
+database:
+    driver: sqlite
+    dsn: data/shelly.db
+jwt:
+    secret: d2a734d6e0cb8ffb788febae823aa1f8a7ebc8ceeb2b92d94feaca244b129049b7fe2ffb4740bd729392b3d66986c459
+    expire: 72
+crypto:
+    key: 1244aeeb25bddb59d0c696ee9d2df1fba38015cfe995c8081cd38e70c587d113
+ssh:
+    keepalive_interval: 30
+    keepalive_count: 3
+    legacy_algorithms: false
+session:
+    record_dir: data/recordings
+ai:
+    provider: openai
+    api_key: ""
+    base_url: ""
+    model: gpt-4
+    max_context_lines: 200
+sync:
+    enabled: false
+    provider: local
+    interval: 300
+    config: {}

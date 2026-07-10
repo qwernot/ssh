@@ -1,0 +1,26 @@
+# Git
+.git
+.gitignore
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node
+frontend/node_modules
+frontend/.env.local
+
+# Go
+backend/shelly
+backend/*.exe
+backend/data/*.db
+
+# Build artifacts
+shelly.exe
+*.exe

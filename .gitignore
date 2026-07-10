@@ -1,0 +1,27 @@
+# Dependencies
+frontend/node_modules/
+
+# Build output
+frontend/dist/
+*.exe
+backend/cmd/server/web/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data
+backend/data/*.db
+backend/data/*.db-shm
+backend/data/*.db-wal
+backend/data/recordings/
+
+# Env
+.env
+.env.local
