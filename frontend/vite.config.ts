@@ -25,5 +25,13 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     sourcemap: false,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'xterm': ['@xterm/xterm', '@xterm/addon-fit', '@xterm/addon-search', '@xterm/addon-webgl', '@xterm/addon-web-links', '@xterm/addon-unicode11'],
+          'antd': ['antd', '@ant-design/icons'],
+        },
+      },
+    },
   },
 })
